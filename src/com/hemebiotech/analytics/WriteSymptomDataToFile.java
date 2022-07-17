@@ -7,23 +7,15 @@ import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 
 public class WriteSymptomDataToFile  implements ISymptomWriter{
-	
-
 	private static final File FileNameResults = null;
-
 	LinkedHashMap <String,Integer> map;
-	
-
-	
-	
 	public WriteSymptomDataToFile(LinkedHashMap<String, Integer> map) {
 		super();
 		this.map = map;
 	}
 	@Override
 	     public  File writeRustls() 
-	         { 
-		  
+	         { 	  
 			FileWriter writer = null;
 			try {
 				File FileNameResults = new File("result.out");
@@ -39,11 +31,6 @@ public class WriteSymptomDataToFile  implements ISymptomWriter{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
 		return FileNameResults ;
 	}
-
-
-
-	
 }

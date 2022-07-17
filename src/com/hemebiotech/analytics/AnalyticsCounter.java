@@ -4,12 +4,10 @@ package com.hemebiotech.analytics;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
-
-
 public class AnalyticsCounter {
 	
 	
-	public static void main(String args[]) throws Exception {
+	public static void main(String args[]) {
      
 	
          ISymptomReader	readSymptomDataFromFile = new 	ReadSymptomDataFromFile ("symptoms.txt") ;
